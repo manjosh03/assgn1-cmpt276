@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(178, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.activities{
+    margin-bottom: 20px;
+}
+
+h2{
+    color:rgb(178, 17, 17);
+    font-size: 20px;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type= "text"]{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(146, 31, 31);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: #A00000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#result{
+    font-weight: bold;
+    text-align: center;
+}

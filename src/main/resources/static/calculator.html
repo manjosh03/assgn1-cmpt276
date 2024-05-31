@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src = "" defer></script>
 </head>
 <body>
-    <div class = ""></div>
+    <div class = "container">
     <h1>Grade Calculator</h1>
-    <section>
+    <div class="activities">
         <h2>Activities</h2>
+        <form id="gradeForm">
         <p>Give grades to the numeric activities:</p>
         <table>
             <thead>
                 <tr><th>Name</th><th>Short Name</th><th>Weight</th><th>Grade</th><th>Percent</th></tr>
             </thead>
-            <tbody>
-                <tr><td>Activity 1</td><td>A1</td><td><input type="number"></td><td><input type="number"> / <input type="number"></td><td></td></tr>
-                <tr><td>Activity 2</td><td>A2</td><td><input type="number"></td><td><input type="number"> / <input type="number"></td><td></td></tr>
+            <tbody id = "activityTable">
+                <tr><td>Activity 1</td><td>A1</td><td><input type="number" name="weight" min="0" step="0.01"></td><td><input type="number" name="grade" min="0" max="100"> / <input type="number" name="grade" min="0" max="100"></td><td><input type="text" name="percent" readonly></td></tr>
             </tbody>
         </table>
-        <button class = "add row">ADD ROW</button>
-    </section>
-    <section class = "resuly">
-        <button class="compute grades">WEIGHTED</button>
-        <button class="compute grades">MEAN</button>
-    </section>
-</div>
+        <button type="button" id="addRow">ADD ROW</button>
+   <div type="buttons">
+        <button type="button" id="weightedButton">WEIGHTED</button>
+        <button type="button" id="meanButton">MEAN</button>
+    </div>
+        </form>
 </body>
 </html>
