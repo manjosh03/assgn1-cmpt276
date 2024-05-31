@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grade Calculator</title>
     <link rel="stylesheet" href="calculator.css">
-    <script src = "" defer></script>
+    
 </head>
 <body>
     <div class = "container">
-    <h1>Grade Calculator</h1>
+        <h1>Grade Calculator</h1>
     <div class="activities">
         <h2>Activities</h2>
         <form id="gradeForm">
@@ -19,7 +19,7 @@
                 <tr><th>Name</th><th>Short Name</th><th>Weight</th><th>Grade</th><th>Percent</th></tr>
             </thead>
             <tbody id = "activityTable">
-                <tr><td>Activity 1</td><td>A1</td><td><input type="number" name="weight" min="0" step="0.01"></td><td><input type="number" name="grade" min="0" max="100"> / <input type="number" name="grade" min="0" max="100"></td><td><input type="text" name="percent" readonly></td></tr>
+                <tr><td>Activity 1</td><td>A1</td><td><input type="number" name="weight" min="0" step="0.01"></td><td><input type="number" name="gradeObtained" min="0" max="100"> / <input type="number" name="gradeTotal" min="0" max="100"></td><td><input type="text" name="percent" readonly></td></tr>
             </tbody>
         </table>
         <button type="button" id="addRow">ADD ROW</button>
@@ -28,5 +28,11 @@
         <button type="button" id="meanButton">MEAN</button>
     </div>
         </form>
+    </div>
+    <div id="result">
+        Result
+    </div>
+    </div>
+<script src = "calculator.js"></script>
 </body>
 </html>
