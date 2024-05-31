@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         newRow.innerHTML = `
             <td>Activity ${activityCount}</td>
             <td>A${activityCount}</td>
-            <td><input type="number" name="weight" min="0" step="0.01"></td>
-            <td><input type="number" name="gradeObtained" min="0" max="100"> / <input type = "number" name="gradeTotal" min="0" max="100"></td>
+            <td><input type="number" class="input-box" name="weight" min="0" step="0.01"></td>
+            <td><input type="number" class="input-box" name="gradeObtained" min="0" max="100"> / <input type = "number" class="input-box" name="gradeTotal" min="0" max="100"></td>
             <td><input type="text" name="percent" readonly></td>
         `;
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const meanResult = calculateMean(grades);
-        resultDiv.textContent = `Result: ${meanResult.toFixed(2)}%`;
+        resultDiv.textContent = `Result ${meanResult.toFixed(2)}%`;
     });
 
     function updatePercent(input) {
