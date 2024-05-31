@@ -79,9 +79,9 @@ input[type="number"]{
 input[type= "text"]{
     padding: 5px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: #e9eff1;
     border: none;
-    text-align: center;
+    text-align: left;
 }
 .Result-Btn{
     display: flex;
